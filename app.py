@@ -57,3 +57,12 @@ fig.update_layout(width=1000, height=600, margin=dict(t=0, l=0, r=100, b=0))
 with right_column:
     # Display the graph
     st.plotly_chart(fig)
+
+contact_form = """
+<form action="https://formsubmit.co/awhismail@gmail.com" method="POST">
+     <input type="text" name="name" required>
+     <input type="email" name="email" required>
+     <button type="submit">Send</button>
+</form>
+"""
+st.markdown(contact_form, unsafe_allow_html=True)
