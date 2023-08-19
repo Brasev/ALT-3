@@ -9,7 +9,7 @@ input[type=text], input[type=email], textarea {
   resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
-/* Style the submit button with a specific background color etc */
+
 button[type=submit] {
   background-color: #04AA6D;
   color: white;
@@ -19,7 +19,14 @@ button[type=submit] {
   cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
+
 button[type=submit]:hover {
   background-color: #45a049;
 }
+
+form {
+  background-color: lightblue; 
+  max-width: 500px; 
+  margin: 0 auto;
+  }
+
