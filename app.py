@@ -60,8 +60,9 @@ with right_column:
 
 contact_form = """
 <form action="https://formsubmit.co/awhismail@gmail.com" method="POST">
-     <input type="text" name="name" required>
-     <input type="email" name="email" required>
+     <input type="text" name="name" placeholder="Your name" required>
+     <input type="email" name="email" placeholder="Your email" required>
+     <textarea name="message" placeholder="Message"></textarea>
      <button type="submit">Send</button>
 </form>
 """
