@@ -59,12 +59,25 @@ with right_column:
     st.plotly_chart(fig)
 
 contact_form = """
-<form action="https://formsubmit.co/awhismail@gmail.com" method="POST">
-     <input type="text" name="name" placeholder="Your name" required>
-     <input type="email" name="email" placeholder="Your email" required>
-     <textarea name="message" placeholder="Message"></textarea>
-     <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
-</form>
+<div class="container">
+  <h1>FormSubmit Demo</h1>
+  <form target="_blank" action="https://formsubmit.co/your@email.com" method="POST">
+    <div class="form-group">
+      <div class="form-row">
+        <div class="col">
+          <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+        </div>
+        <div class="col">
+          <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+  </form>
+</div>
 """
 st.markdown(contact_form, unsafe_allow_html=True)
 
