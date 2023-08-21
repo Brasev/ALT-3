@@ -63,7 +63,7 @@ contact_form = """
      <input type="text" name="name" placeholder="Your name" required>
      <input type="email" name="email" placeholder="Your email" required>
      <textarea name="message" placeholder="Message"></textarea>
-     <button type="submit">Send</button>
+     <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
 </form>
 """
 st.markdown(contact_form, unsafe_allow_html=True)
