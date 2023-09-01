@@ -4,7 +4,6 @@ import plotly.express as px
 import streamlit as st
 import plotly.graph_objects as go
 import json
-from streamlit_lottie import st_lottie
 import requests
 
 # Set page configuration
@@ -32,13 +31,6 @@ xv = df["xv"]
 st.title("🎱 Bouncing Ball 🎱")
 st.markdown("##")
 
-def load_lottieurl(url:str):
-    r = requests.get(url)
-    if r.status_code != 200:
-        return None
-    return r.json()
-
-lottie_ball = load_lottieurl("https://lottie.host/50174de1-44c7-41db-ac1e-1e6dc78121da/ngeTUsNkmO.json")    
 
 st.markdown("##")
 
